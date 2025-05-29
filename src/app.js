@@ -14,7 +14,7 @@ const generateAllDomainCombinations = function(domainArray,pronouns=[],adjs=[],n
           domain = pronoun+adj;
           domainArray.push(domain+noun+webDot);
           console.log(domain+noun+webDot);
-          //following has the .com/.net swoop in and replace part of the noun if applicable
+          //following has the .com/.net swoop in and replace part of the noun if applicable, for example, it will identify that you can make a domain "cyb.org" in addition to "cyborg.org" if "cyborg" was a noun and ".org" was a valid ending of a domain
           inclusiveDomainName(domain,domainArray,noun,webDot);
         }
       }
